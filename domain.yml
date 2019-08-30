@@ -1,0 +1,37 @@
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- processo_seletivo
+- informacoes_matricula
+- thank
+templates:
+  utter_greet:
+  - text: Olá! Seja bem vindo!
+    edited_since_last_training: true
+  utter_goodbye:
+  - text: Falou!
+    edited_since_last_training: true
+  utter_helpful:
+  - text: Em que posso ajudar? No momento eu sei te informar sobre o processo seletivo
+      e sobre matrículas.
+    edited_since_last_training: false
+  utter_processo_seletivo:
+  - text: Quer saber sobre processo seletivo? Você encontrará mais informações em
+      https://copese.ifsudestemg.edu.br/
+  utter_matricula:
+  - text: Legal, você encontrará mais informações sobre matrícula em https://copese.ifsudestemg.edu.br/
+    edited_since_last_training: false
+  utter_yourewelcome:
+  - text: Que isso... Não há de quê!
+  utter_select_campus:
+  - text: Em qual campus?
+actions:
+- utter_greet
+- utter_goodbye
+- utter_helpful
+- utter_processo_seletivo
+- utter_matricula
+- utter_yourewelcome
+- utter_select_campus
